@@ -1,0 +1,354 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Razer DeathAdder V2",
+      "description": "High-precision gaming mouse with advanced optical sensor",
+      "price": 9164.69,
+      "image": "https://assets2.razerzone.com/images/pnx.assets/7257c4132da98a3667632a86ac9a6a65/dav2-hero780h.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Logitech G Pro X Superlight",
+      "description": "Ultra-lightweight wireless gaming mouse",
+      "price": 19627.69,
+      "image": "https://resource.logitechg.com/w_1600,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-superlight/pro-x-superlight-black-gallery-1.png?v=1"
+    },
+    {
+      "id": 3,
+      "name": "Roccat Vulcan 122 AIMO",
+      "description": "Mechanical gaming keyboard with RGB lighting",
+      "price": 20959.69,
+      "image": "https://m.media-amazon.com/images/I/819FcxSYcFL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pulsar Xlite V2",
+      "description": "Ergonomic gaming mouse with ultra-lightweight design",
+      "price": 10479.69,
+      "image": "https://www.pulsar.gg/cdn/shop/products/XliteV2gamingmouse_medium_blue_top-635664_large.png?v=1718795034"
+    },
+    {
+      "id": 5,
+      "name": "Asus ROG Strix RTX 3080",
+      "description": "High-performance graphics card for extreme gaming",
+      "price": 117299.69,
+      "image": "https://dlcdnwebimgs.asus.com/gain/18306F07-8796-408A-94DF-316149D3E5B9/w717/h525"
+    },
+    {
+      "id": 6,
+      "name": "Elgato Stream Deck",
+      "description": "Customizable control panel for streamers",
+      "price": 19627.69,
+      "image": "https://www.elgato.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Felgato-pwa%2Fimage%2Fupload%2Fv1679475550%2FProducts%2F10GBA9901%2Fabove-the-fold%2Fdesktop%2Fmk.2-black-01_seyirh.jpg&w=1920&q=85"
+    },
+    {
+      "id": 7,
+      "name": "Corsair K95 RGB Platinum XT",
+      "description": "Mechanical gaming keyboard with dynamic RGB lighting",
+      "price": 26159.69,
+      "image": "https://m.media-amazon.com/images/I/71PzW7vZNUL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Razer BlackShark V2 Pro",
+      "description": "Wireless esports headset with advanced audio",
+      "price": 23509.69,
+      "image": "https://m.media-amazon.com/images/I/71LXi404OOL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Logitech G935",
+      "description": "Wireless 7.1 surround sound gaming headset",
+      "price": 17079.69,
+      "image": "https://resource.logitechg.com/w_1600,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g935/g935-gallery-1.png?v=1"
+    },
+    {
+      "id": 10,
+      "name": "Roccat Kone Pro Air",
+      "description": "Wireless ergonomic gaming mouse with RGB",
+      "price": 17079.69,
+      "image": "https://cdn.shopify.com/s/files/1/0556/5795/5430/files/4-ROCCAT-KoneProAir-WHT.png?v=1707530288&width=1400&height=788&crop=center"
+    },
+    {
+      "id": 11,
+      "name": "Pulsar X2 Wireless",
+      "description": "Ultra-lightweight wireless gaming mouse",
+      "price": 11759.69,
+      "image": "https://www.pulsar.gg/cdn/shop/products/X2gamingmouse_medium_White_top_bc42f473-0337-49b2-87c2-2ba540f5604a-787403_large.png?v=1718794724"
+    },
+    {
+      "id": 12,
+      "name": "Asus ROG Zephyrus G14",
+      "description": "Compact gaming laptop with powerful performance",
+      "price": 209759.69,
+      "image": "https://dlcdnwebimgs.asus.com/files/media/670DC667-C4BA-45A5-AB16-7ABB1316ABEE/v4/images/large/1x/animation/s4/1.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Elgato Wave:3",
+      "description": "Premium microphone for streaming and recording",
+      "price": 20959.69,
+      "image": "https://www.elgato.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Felgato-pwa%2Fimage%2Fupload%2Fv1679913984%2FProducts%2F10MAB9901%2Fabove-the-fold%2Fdesktop%2Fwave-3-black-01_zz5vyc.jpg&w=1920&q=85"
+    },
+    {
+      "id": 14,
+      "name": "Corsair Virtuoso RGB Wireless XT",
+      "description": "High-fidelity wireless gaming headset",
+      "price": 30159.69,
+      "image": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Headsets/CA-9011188-NA/Gallery/VIRTUOSO_XT_01.webp?width=1080&quality=85&auto=webp&format=pjpg"
+    },
+    {
+      "id": 15,
+      "name": "Razer Huntsman V2 Analog",
+      "description": "Opto-mechanical gaming keyboard with adjustable actuation",
+      "price": 32759.69,
+      "image": "https://assets2.razerzone.com/images/pnx.assets/04d9fb19063dbc48010a231f24b05686/razer-huntsman-v2-analog-hero-desktop.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Logitech G920 Driving Force",
+      "description": "Racing wheel for realistic driving experience",
+      "price": 52359.69,
+      "image": "https://resource.logitechg.com/w_1600,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/drivingforce/g920-gallery-1-2.png?v=1"
+    },
+    {
+      "id": 17,
+      "name": "Roccat Syn Pro Air",
+      "description": "Wireless 3D audio gaming headset",
+      "price": 19627.69,
+      "image": "https://cdn.shopify.com/s/files/1/0556/5795/5430/files/4-ROCCAT-SynProAir.png?v=1707513485&width=1400&height=788&crop=center"
+    },
+    {
+      "id": 18,
+      "name": "Pulsar Gaming Gears XLite",
+      "description": "Lightweight ergonomic gaming mouse",
+      "price": 9164.69,
+      "image": "https://www.pulsar.gg/cdn/shop/products/XliteV2gamingmouse_medium_pink_top_7b70c9bc-86b5-4b0f-9d24-60732c2c179b-338238_large.png?v=1718795013"
+    },
+    {
+      "id": 19,
+      "name": "Asus ROG Swift PG259QN",
+      "description": "360Hz gaming monitor for ultra-fast response",
+      "price": 91629.69,
+      "image": "https://dlcdnwebimgs.asus.com/gain/A5F4A546-2784-48CE-989A-56CA51CCB6C8/w717/h525"
+    },
+    {
+      "id": 20,
+      "name": "Elgato HD60 S+",
+      "description": "External capture card for streaming",
+      "price": 26159.69,
+      "image": "https://m.media-amazon.com/images/I/51+P1sThIVL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Corsair Dark Core RGB Pro SE",
+      "description": "Wireless gaming mouse with fast charging",
+      "price": 13079.69,
+      "image": "https://assets.corsair.com/image/upload/c_pad,q_auto,h_1024,w_1024,f_auto/products/Gaming-Mice/CH-9315511-NA/Gallery/DARK_CORE_RGB_PRO_SE_01.webp?width=1080&quality=85&auto=webp&format=pjpg"
+    },
+    {
+      "id": 22,
+      "name": "Razer Naga Pro",
+      "description": "Modular wireless gaming mouse",
+      "price": 19627.69,
+      "image": "https://via.placeholder.com/150?text=Razer+Naga+Pro"
+    },
+    {
+      "id": 23,
+      "name": "Logitech G915 TKL",
+      "description": "Wireless mechanical gaming keyboard",
+      "price": 30159.69,
+      "image": "https://via.placeholder.com/150?text=Logitech+G915+TKL"
+    },
+    {
+      "id": 24,
+      "name": "Roccat Burst Pro Air",
+      "description": "Wireless lightweight gaming mouse",
+      "price": 13079.69,
+      "image": "https://via.placeholder.com/150?text=Roccat+Burst+Pro+Air"
+    },
+    {
+      "id": 25,
+      "name": "Pulsar Gaming Gears XLite V2",
+      "description": "Improved ultra-lightweight gaming mouse",
+      "price": 10479.69,
+      "image": "https://via.placeholder.com/150?text=Pulsar+Gaming+Gears+XLite+V2"
+    },
+    {
+      "id": 26,
+      "name": "Asus ROG Phone 5",
+      "description": "High-performance gaming smartphone",
+      "price": 131299.69,
+      "image": "https://via.placeholder.com/150?text=Asus+ROG+Phone+5"
+    },
+    {
+      "id": 27,
+      "name": "Elgato Key Light",
+      "description": "Professional studio lighting for streamers",
+      "price": 26159.69,
+      "image": "https://via.placeholder.com/150?text=Elgato+Key+Light"
+    },
+    {
+      "id": 28,
+      "name": "Corsair Scimitar RGB Elite",
+      "description": "MOBA/MMO gaming mouse with 12 side buttons",
+      "price": 10479.69,
+      "image": "https://via.placeholder.com/150?text=Corsair+Scimitar+RGB+Elite"
+    },
+    {
+      "id": 29,
+      "name": "Razer Viper Ultimate",
+      "description": "Wireless lightweight gaming mouse",
+      "price": 19627.69,
+      "image": "https://via.placeholder.com/150?text=Razer+Viper+Ultimate"
+    },
+    {
+      "id": 30,
+      "name": "Logitech G733 Lightspeed",
+      "description": "Wireless gaming headset with RGB lighting",
+      "price": 17079.69,
+      "image": "https://via.placeholder.com/150?text=Logitech+G733+Lightspeed"
+    },
+    {
+      "id": 31,
+      "name": "Roccat Kone AIMO Remastered",
+      "description": "Ergonomic RGB gaming mouse",
+      "price": 10479.69,
+      "image": "https://via.placeholder.com/150?text=Roccat+Kone+AIMO+Remastered"
+    },
+    {
+      "id": 32,
+      "name": "Pulsar Gaming Gears Superglide",
+      "description": "Smoothest mouse feet for gaming mice",
+      "price": 3279.69,
+      "image": "https://via.placeholder.com/150?text=Pulsar+Gaming+Gears+Superglide"
+    },
+    {
+      "id": 33,
+      "name": "Asus ROG Crosshair VIII Dark Hero",
+      "description": "High-performance motherboard for gaming",
+      "price": 52359.69,
+      "image": "https://via.placeholder.com/150?text=Asus+ROG+Crosshair+VIII+Dark+Hero"
+    },
+    {
+      "id": 34,
+      "name": "Elgato Green Screen",
+      "description": "Collapsible chroma key panel",
+      "price": 20959.69,
+      "image": "https://via.placeholder.com/150?text=Elgato+Green+Screen"
+    },
+    {
+      "id": 35,
+      "name": "Corsair MM700 RGB",
+      "description": "Extended mouse pad with RGB lighting",
+      "price": 7859.69,
+      "image": "https://via.placeholder.com/150?text=Corsair+MM700+RGB"
+    },
+    {
+      "id": 36,
+      "name": "Razer Kiyo Pro",
+      "description": "High-performance webcam for streaming",
+      "price": 26159.69,
+      "image": "https://via.placeholder.com/150?text=Razer+Kiyo+Pro"
+    },
+    {
+      "id": 37,
+      "name": "Logitech G840 XL Gaming Mouse Pad",
+      "description": "Extra-large gaming mouse pad",
+      "price": 6549.69,
+      "image": "https://via.placeholder.com/150?text=Logitech+G840+XL+Gaming+Mouse+Pad"
+    },
+    {
+      "id": 38,
+      "name": "Roccat Elo 7.1 Air",
+      "description": "Wireless surround sound gaming headset",
+      "price": 13079.69,
+      "image": "https://via.placeholder.com/150?text=Roccat+Elo+7.1+Air"
+    },
+    {
+      "id": 39,
+      "name": "Pulsar Gaming Gears Xlite Wireless",
+      "description": "Ultra-lightweight wireless gaming mouse",
+      "price": 11779.69,
+      "image": "https://via.placeholder.com/150?text=Pulsar+Gaming+Gears+Xlite+Wireless"
+    },
+    {
+      "id": 40,
+      "name": "Asus ROG Strix Flare II Animate",
+      "description": "Mechanical gaming keyboard with LED matrix display",
+      "price": 26159.69,
+      "image": "https://via.placeholder.com/150?text=Asus+ROG+Strix+Flare+II+Animate"
+    },
+    {
+      "id": 41,
+      "name": "Elgato Cam Link 4K",
+      "description": "USB capture card for connecting cameras to your PC",
+      "price": 17079.69,
+      "image": "https://via.placeholder.com/150?text=Elgato+Cam+Link+4K"
+    },
+    {
+      "id": 42,
+      "name": "Corsair HS80 RGB Wireless",
+      "description": "Premium wireless gaming headset",
+      "price": 19627.69,
+      "image": "https://via.placeholder.com/150?text=Corsair+HS80+RGB+Wireless"
+    },
+    {
+      "id": 43,
+      "name": "Razer Tartarus Pro",
+      "description": "Gaming keypad with adjustable actuation switches",
+      "price": 17079.69,
+      "image": "https://via.placeholder.com/150?text=Razer+Tartarus+Pro"
+    },
+    {
+      "id": 44,
+      "name": "Logitech G502 Lightspeed",
+      "description": "Wireless high-performance gaming mouse",
+      "price": 19627.69,
+      "image": "https://via.placeholder.com/150?text=Logitech+G502+Lightspeed"
+    },
+    {
+      "id": 45,
+      "name": "Roccat Sense AIMO XXL",
+      "description": "RGB illuminated gaming mouse pad",
+      "price": 7859.69,
+      "image": "https://via.placeholder.com/150?text=Roccat+Sense+AIMO+XXL"
+    },
+    {
+      "id": 46,
+      "name": "Pulsar Gaming Gears X2 Mini",
+      "description": "Compact ultra-lightweight gaming mouse",
+      "price": 9164.69,
+      "image": "https://via.placeholder.com/150?text=Pulsar+Gaming+Gears+X2+Mini"
+    },
+    {
+      "id": 47,
+      "name": "Asus ROG Chakram",
+      "description": "Wireless gaming mouse with joystick",
+      "price": 20959.69,
+      "image": "https://via.placeholder.com/150?text=Asus+ROG+Chakram"
+    },
+    {
+      "id": 48,
+      "name": "Elgato Wave XLR",
+      "description": "Audio interface for professional XLR microphones",
+      "price": 20959.69,
+      "image": "https://via.placeholder.com/150?text=Elgato+Wave+XLR"
+    },
+    {
+      "id": 49,
+      "name": "Corsair iCUE LT100",
+      "description": "Smart lighting tower starter kit",
+      "price": 17079.69,
+      "image": "https://via.placeholder.com/150?text=Corsair+iCUE+LT100"
+    },
+    {
+      "id": 50,
+      "name": "Razer Blade 15",
+      "description": "Advanced gaming laptop with high-end specs",
+      "price": 327299.69,
+      "image": "https://via.placeholder.com/150?text=Razer+Blade+15"
+    }
+  ]
+}
