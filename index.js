@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const products = require("./routes/products");
+const users = require("./routes/users");
 const mongoose = require("mongoose");
 
 // Use CORS middleware
@@ -20,6 +21,7 @@ mongoose
 
 app.use(express.json());
 app.use("/api/products", products);
+app.use("/api/users", users);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`listening on http://localhost:${PORT}`));

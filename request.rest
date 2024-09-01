@@ -1,2 +1,7 @@
-GET http://localhost:3000/api/products/66d31a983626b0cca80aef31
+POST http://localhost:3000/api/users 
+{
+    "name": "dipshan",
+    "email": "dipshandcnew@gmail.com",
+    "password": "niggadipshan"
+}
 
