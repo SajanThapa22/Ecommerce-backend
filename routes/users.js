@@ -1,8 +1,11 @@
+const config = require("config");
+const jwt = require("jsonwebtoken");
 const _ = require("lodash");
 const express = require("express");
 const router = express.Router();
-const { User, validate } = require("../models/user");
 const bcrypt = require("bcrypt");
+
+const { User, validate } = require("../models/user");
 
 // Route to get all products
 router.post("/", async (req, res) => {
@@ -19,8 +22,9 @@ router.post("/", async (req, res) => {
   user.password = await bcrypt.hash(user.password, salt);
 
   await user.save();
+  const token = user.generateAuthToken();
   const picked = _.pick(user, ["_id", "name", "email"]);
-  res.send(picked);
+  res.header("x-auth-token", token).send(picked);
 });
 
 module.exports = router;

@@ -1,8 +1,8 @@
-POST http://localhost:3000/api/auth 
+POST http://localhost:3000/api/users
 Content-Type: application/json
 
 {
-    "email": "dipshandcnew@gmail.com",
-    "password": "12345"
+    "name": "thaaapaaa",
+    "email": "sajanthapa1888@gmail.com",
+    "password": "54321"
 }
-
