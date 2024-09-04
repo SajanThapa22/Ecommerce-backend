@@ -10,5 +10,10 @@ POST http://localhost:3000/api/auth
     "password": "54321"
 }
 
+###
+
+GET http://localhost:3000/api/products
+
+
 
 

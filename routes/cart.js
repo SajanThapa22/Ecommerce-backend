@@ -10,7 +10,7 @@ router.get("/", auth, async (req, res) => {
       "items.product"
     );
     if (!cart) return res.status(404).send("No cart found for this user");
-    res.json(cart);
+    res.send(cart);
   } catch (err) {
     res.status(500).send(err.message);
   }
