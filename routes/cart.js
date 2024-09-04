@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express.router();
+const router = express.Router();
 const Cart = require("../models/cart");
 const auth = require("../middleware/auth");
 
@@ -17,23 +17,29 @@ router.get("/", auth, async (req, res) => {
 });
 
 router.post("/", auth, async (req, res) => {
-  const { productId } = req.body;
+  try {
+    const { productId } = req.body;
 
-  let cart = await Cart.findOne({ user: req.user._id });
-  if (!cart) {
-    cart = new Cart({
-      user: req.user._id,
-      items: [],
-    });
-  }
+    let cart = await Cart.findOne({ user: req.user._id });
+    if (!cart) {
+      cart = new Cart({
+        user: req.user._id,
+        items: [],
+      });
+    }
 
-  const existingItem = cart.items.find((item) =>
-    item.product.equals(productId)
-  );
-  if (existingItem) {
-    res.status(400).send("item is already in the cart");
-  } else {
-    cart.items.push({ product: productId });
+    const existingItem = cart.items.find((item) =>
+      item.product.equals(productId)
+    );
+    if (existingItem) {
+      res.status(400).send("item is already in the cart");
+    } else {
+      cart.items.push({ product: productId });
+    }
+    await cart.save();
+    res.send(cart);
+  } catch (err) {
+    res.status(500).send(err.message);
   }
 });
 

@@ -1,8 +1,14 @@
-POST http://localhost:3000/api/users
+GET http://localhost:3000/api/cart
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NmQ4OGI5NDU5YTc1ZDlkZDcyZjM0NTgiLCJpYXQiOjE3MjU0Njc1NjJ9.QZpuQH5Vo8Ah6rtNqtbjNG3GnZTTzSDHGWHLawHTS7Q
 Content-Type: application/json
 
+###
+POST http://localhost:3000/api/auth
+
 {
-    "name": "thaaapaaa",
     "email": "sajanthapa123@gmail.com",
     "password": "54321"
 }
+
+
+
