@@ -1,10 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { Product } = require("../models/product");
-const auth = require("../middleware/auth");
 
 // Route to get all products
-router.get("/", auth, async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const products = await Product.find();
     res.send(products);
