@@ -1,24 +1,14 @@
 const express = require("express");
 const router = express.Router();
 const { Product } = require("../models/product");
+const paginate = require("../middleware/paginate");
 
 // Route to get all products
-router.get("/", async (req, res) => {
+router.get("/", paginate(Product), async (req, res) => {
   const page = parseInt(req.query.page) || 1;
   const limit = parseInt(req.query.limit) || 10;
   try {
-    const skip = (page - 1) * limit;
-
-    const products = await Product.find().skip(skip).limit(limit);
-
-    const total = await Product.countDocuments();
-
-    res.send({
-      total,
-      page,
-      limit,
-      products,
-    });
+    res.send(res.paginatedResults);
   } catch (err) {
     console.error("Error occurred while fetching products:", err);
     res.status(500).send({ message: err.message });
