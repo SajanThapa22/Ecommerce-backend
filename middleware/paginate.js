@@ -5,10 +5,12 @@ function paginate(model) {
 
     const startIndex = (page - 1) * limit;
     const endIndex = page * limit;
+    const totalDocuments = await model.countDocuments().exec();
 
     const results = {};
 
-    if (endIndex < model.length) {
+    if (endIndex < totalDocuments) {
+      console.log("there's next");
       results.next = {
         page: page + 1,
         limit: limit,
@@ -16,6 +18,8 @@ function paginate(model) {
     }
 
     if (startIndex > 0) {
+      console.log("there's prev");
+
       results.prev = {
         page: page - 1,
         limit: limit,
@@ -23,7 +27,7 @@ function paginate(model) {
     }
 
     try {
-      results.results = await model.find().skip(endIndex).limit(limit);
+      results.results = await model.find().limit(limit).skip(startIndex).exec();
       res.paginatedResults = results;
       next();
     } catch ({ err }) {
