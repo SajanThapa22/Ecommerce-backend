@@ -4,12 +4,24 @@ const { Product } = require("../models/product");
 
 // Route to get all products
 router.get("/", async (req, res) => {
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 10;
   try {
-    const products = await Product.find();
-    res.send(products);
+    const skip = (page - 1) * limit;
+
+    const products = await Product.find().skip(skip).limit(limit);
+
+    const total = await Product.countDocuments();
+
+    res.send({
+      total,
+      page,
+      limit,
+      products,
+    });
   } catch (err) {
     console.error("Error occurred while fetching products:", err);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send({ message: err.message });
   }
 });
 
