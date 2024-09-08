@@ -9,7 +9,7 @@ router.get("/", auth, async (req, res) => {
     const cart = await Cart.findOne({ user: req.user._id }).populate(
       "items.product"
     );
-    if (!cart) return res.status(404).send("No cart found for this user");
+    if (!cart) return res.status(404).json("No cart found for this user");
     res.send(cart);
   } catch (err) {
     res.status(500).send(err.message);

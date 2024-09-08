@@ -30,7 +30,7 @@ userSchema.methods.generateAuthToken = function () {
   const accessToken = jwt.sign(
     { _id: this._id },
     process.env.ACCESS_TOKEN_SECRET,
-    { expiresIn: "10m" }
+    { expiresIn: "40m" }
   );
   return accessToken;
 };
