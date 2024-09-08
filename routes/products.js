@@ -2,11 +2,10 @@ const express = require("express");
 const router = express.Router();
 const { Product } = require("../models/product");
 const paginate = require("../middleware/paginate");
+const auth = require("../middleware/auth");
 
 // Route to get all products
-router.get("/", paginate(Product), async (req, res) => {
-  const page = parseInt(req.query.page) || 1;
-  const limit = parseInt(req.query.limit) || 10;
+router.get("/", auth, paginate(Product), async (req, res) => {
   try {
     res.send(res.paginatedResults);
   } catch (err) {

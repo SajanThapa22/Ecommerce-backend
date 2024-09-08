@@ -1,4 +1,3 @@
-const config = require("config");
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
@@ -6,17 +5,12 @@ const cors = require("cors");
 const products = require("./routes/products");
 const users = require("./routes/users");
 const auth = require("./routes/auth");
-const cart = require('./routes/cart')
-
-if (!config.get("jwtPrivateKey")) {
-  console.error("FATAL ERROR: jwtPrivateKey is not defined.");
-  process.exit(1);
-}
+const cart = require("./routes/cart");
 
 // Use CORS middleware
 app.use(
   cors({
-    origin: "http://localhost:5173", // Your frontend's origin
+    origin: "http://localhost:3001", // Your frontend's origin
     methods: "GET,POST,PUT,DELETE", // Allowed methods
     allowedHeaders: "Content-Type,Authorization", // Allowed headers
   })

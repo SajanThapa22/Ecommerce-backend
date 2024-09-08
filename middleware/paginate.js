@@ -1,7 +1,7 @@
 function paginate(model) {
   return async (req, res, next) => {
     const page = parseInt(req.query.page) || 1;
-    const limit = parseInt(req.query.limit) || 10;
+    const limit = parseInt(req.query.limit) || 9;
 
     const startIndex = (page - 1) * limit;
     const endIndex = page * limit;
@@ -10,7 +10,6 @@ function paginate(model) {
     const results = {};
 
     if (endIndex < totalDocuments) {
-      console.log("there's next");
       results.next = {
         page: page + 1,
         limit: limit,
@@ -18,8 +17,6 @@ function paginate(model) {
     }
 
     if (startIndex > 0) {
-      console.log("there's prev");
-
       results.prev = {
         page: page - 1,
         limit: limit,

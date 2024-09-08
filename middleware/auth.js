@@ -1,16 +1,20 @@
+require("dotenv").config();
 const jwt = require("jsonwebtoken");
-const config = require("config");
 
 function auth(req, res, next) {
-  const token = req.header("x-auth-token");
-  if (!token) return res.status(401).send("Access denied. No token provided");
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
 
-  console.log("Received Token:", token);
+  if (!token) return res.status(403).send("Access denied. No token provided");
 
   try {
-    const decoded = jwt.verify(token, config.get("jwtPrivateKey"));
-    console.log("Decoded Token:", decoded);
-    req.user = decoded;
+    jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+      if (err) {
+        res.status(403).send({ message: err.message });
+      }
+
+      req.user = user;
+    });
     next();
   } catch (ex) {
     console.error("Token Verification Error:", ex);
