@@ -32,7 +32,7 @@ router.post("/", auth, async (req, res) => {
       item.product.equals(productId)
     );
     if (existingItem) {
-      res.status(400).send("item is already in the cart");
+      res.status(400).send("Item is already in the cart");
     } else {
       cart.items.push({ product: productId });
     }
