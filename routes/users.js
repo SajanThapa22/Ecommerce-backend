@@ -21,11 +21,11 @@ router.post("/", async (req, res) => {
   user.password = await bcrypt.hash(user.password, salt);
 
   await user.save();
-  const token = user.generateAuthToken();
   const picked = _.pick(user, ["_id", "name", "email"]);
-  res.header("Authorization", `Bearer ${token}`).send(picked);
+  res.send(picked);
 });
 
+//Route for getting current user
 router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id).select("-password");
   res.send(user);
