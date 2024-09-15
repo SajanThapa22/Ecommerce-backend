@@ -10,12 +10,12 @@ function auth(req, res, next) {
   try {
     jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
       if (err) {
-        res.status(403).send({ message: err.message });
+        return res.status(403).send({ message: err.message });
       }
 
       req.user = user;
+      next();
     });
-    next();
   } catch (ex) {
     console.error("Token Verification Error:", ex);
     res.status(400).send("Invalid token.");
